@@ -9,3 +9,4 @@ number_sum = int(number)+number_2+number_3
 print(f'{int(number)}+{number_2}+{number_3}={number_sum}')
 print()
 print(f'Результат = {number_sum}')
+
