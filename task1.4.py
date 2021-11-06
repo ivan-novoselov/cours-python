@@ -18,3 +18,4 @@ while number > 0:
     number = number // 10
 
 print(f'Самое большое число: {number1}')
+
