@@ -21,3 +21,4 @@ print()
 number_of_employees = int(input("Введите количество сотрудников: "))
 profit_per_employee = (revenue-costs)/number_of_employees
 print(f'Прибыль фирмы в расчете на одного сотрудника: {profit_per_employee}')
+
