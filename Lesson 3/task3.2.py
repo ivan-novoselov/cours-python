@@ -4,26 +4,18 @@
 # Реализовать вывод данных о пользователе одной строкой.
 
 def my_user_data(name, surname, birthdate, city, email, tel):
-    result_user_data = [name + surname + birthdate + city + email + tel]
+    result_user_data = (f'{name} {surname} {birthdate} {city} {email} {tel}')
     return result_user_data
 
-name = input('Name: ')
-surname = input('Surname: ')
-birthdate = input('Birthdate: ')
-city = input('City: ')
-email = input('email: ')
-if '@' in email:
-    tel = input('tel: ')
-else:
-    while '@' not in email:
-        print('email введен неверно')
-        email = input('email: ')
-tel = input('tel: ')
-while type(tel) is int:
-    print('tel введен неверно')
-    tel = input('tel: ')
 
-data_list =(f'name-{name}; surname-{surname}; birthdate - {birthdate}; city - {city}; email - {email}; tel - {tel}')
+name1 = input('Name: ')
+surname1 = input('Surname: ')
+birthdate1 = input('Birthdate: ')
+city1 = input('City: ')
+email1 = input('email: ')
+tel1 = input('tel: ')
+
+data_list = my_user_data(name = name1, surname = surname1, birthdate = birthdate1, city = city1, email = email1, tel = tel1)
 print(data_list)
 
 
