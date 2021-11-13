@@ -7,7 +7,12 @@
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 
 def my_func(x, y):
-    y = y*-1
+
+    if x < 0:
+        x = x * -1
+    if y > 0:
+        y = y * -1
+
     func_result = x ** y
     return func_result
 
@@ -15,5 +20,23 @@ num1 = float(input('num1= '))
 num2 = int(input('num2= '))
 result = my_func(num1, num2)
 print(result)
+
+
+def my_func(x, y):
+    if x < 0:
+        x = x * -1
+    if y > 0:
+        y = y * -1
+    z = 1
+    for i in range (y * -1):
+        z = z * x
+    z = 1 / z
+    return z
+num1 = float(input('num1= '))
+num2 = int(input('num2= '))
+result = my_func(num1, num2)
+print(result)
+
+
 
 
